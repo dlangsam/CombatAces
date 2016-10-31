@@ -1,0 +1,21 @@
+
+
+.dropdown-menu.dark > li > a{
+	color: #333;
+}
+.timeline-body > div > a{
+	color: black;
+}
+.timeline:before{
+	background-color: #777;
+}
+
+.img-circle{
+	max-width: 175px;
+	width: 175px;
+	height: 175px;
+}
+.move-poster{
+	width: 360px;
+	height: 260px;
+}
