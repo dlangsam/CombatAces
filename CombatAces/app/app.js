@@ -1,6 +1,45 @@
 (function(){
  
-  var app = angular.module('combatMovies', []);
+  var app = angular.module('combatAces', []);
+
+
+  app.controller('MainController', ['$http', function($http){
+     var main = this;
+    //store.products = gems;
+     main.quotes = quoteList;
+   main.movies = movieList; //init page to empty to array so no error before page loads
+    $http.get('../data.json').success(function(data){
+      main.movies = data.movies;
+    });
+    
+     
+
+      main.getQuote = function(){
+       var numQuotes = this.quotes.length;
+          var rand = Math.floor((Math.random()*numQuotes));
+        return this.quotes[rand];
+
+      };
+  }]);
+
+    //     app.controller('MainController', function(){
+  //   var main = this;
+  //   //store.products = gems;
+  //   main.movies = []; //init page to empty to array so no error before page loads
+  //   // $http.get('../data.json').success(function(data){
+  //   //   main.movies = data.movies;
+  //   // });
+
+  //   main.quotes = quoteList;
+
+  //   main.getQuote = function(){
+  //      var numQuotes = this.quotes.length;
+  //         var rand = Math.floor((Math.random()*numQuotes));
+  //       return this.quotes[rand];
+
+  //   };
+  // });
+
   app.filter('isAccurate', function () {
     return function (items, level) {
       var filtered = []
@@ -29,34 +68,35 @@
  
 
 
-   
-    app.controller('MainController', function(){
 
-    
-    this.movies = movieList; 
-    this.quotes = quoteList;
 
-    this.getQuote = function(){
-      var numQuotes = this.quotes.length;
-      var rand = Math.floor((Math.random()*numQuotes));
-      return this.quotes[rand];
 
-    };
+
+    // app.controller('ModuleController', function(){
+    //   this.movieChoice = 0; 
+    //   this.setMovie = function(setMovie){
+    //     this.movieChoice = setMovie;
+    //   }
+    //   this.isSet = function(setMovie){
+    //       return this.tab  === setMovie; 
+    //   }
+    // });
+
  
-  });
+
 
     var quoteList = [
 
     "''Never in the field of human conflict, has so much, been owed by so many, to so few!'' -Winston Churchill",
-    "''An army is a team. It lives, eats, sleeps, fights as a team. This individuality stuff is a bunch of bullshit.'' - George Patton ",
+    "''An army is a team. It lives, eats, sleeps, fights as a team. This individuality stuff is a bunch of bullshit.'' - George Patton",
     "''Courage is fear holding on a minute longer. '' - George Patton",   
     "''I'd rather have a German division infront of me, than a French one behind.'' - George Patton ",
-    "''We herd sheep, we drive cattle, we lead people. Lead me, follow me, or get out of my way.'' - George Patton ",
+    "''We herd sheep, we drive cattle, we lead people. Lead me, follow me, or get out of my way.'' - George Patton",
     "''Never in the field of human conflict, has so much, been owed by so many, to so few!'' -Winston Churchill",
     "''The tragedy of war is that it uses man's best to do man's worst'' - Henry Fosdick",
     "''We are going to have peace even if we have to fight for it.'' - Dwight D. Eisenhower",
     "''The death of one man is a tragedy.  The death of millions is a statistic.'' - Joseph Stalin ",
-    "''The object of war is not to die for your country, but to make the other bastard die for his. '' - George Patton "
+    "''The object of war is not to die for your country, but to make the other bastard die for his. '' - George Patton"
     ];
 
 
@@ -69,6 +109,7 @@
         size: 50,
         accuracy: 5,
         images: [
+        "img/movies/bob3.jpg",
         "img/movies/bob2.jpg",
           "img/movies/bob1.jpg"
         ]
@@ -101,8 +142,8 @@
         size: 8,
         accuracy: 4,
          images: [
-          "img/movies/spr1.jpg",
-          "img/movies/spr2.jpg"
+          "img/movies/spr2.jpg",
+          "img/movies/spr1.jpg"
         
         ]
       },
@@ -113,6 +154,7 @@
         size: 9,
         accuracy: 2,
         images: [
+        "img/movies/wt2.jpg",
           "img/movies/wt1.jpg"
         
         ]

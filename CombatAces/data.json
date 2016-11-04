@@ -1,0 +1,104 @@
+{"movies": [
+      {
+        "name": "Band of Brothers",
+        "year": 2001,
+        "type": "The Movies",
+        "size": 50,
+        "accuracy": 5,
+        "images": [
+        "../img/movies/bob3.jpg",
+        "../img/movies/bob2.jpg",
+          "../img/movies/bob1.jpg"
+        ]
+      },
+        {
+        "name": "Lost Battalion",
+        "year": 2001,
+        "type": "The Movies",
+        "size": 5,
+        "accuracy": 6,
+        "images": [
+          "../img/movies/lb1.jpg"
+        ]
+      },
+        {
+        "name": "Pearl Harbor",
+        "year": 2001,
+        "type": "The Movies",
+        "size": 10,
+        "accuracy": 3,
+
+        "images": [
+          "../img/movies/ph1.jpg"
+        ]
+      },
+        {
+        "name": "Saving Private Ryan",
+        "year": 1998,
+        "type": "The Movies",
+        "size": 8,
+        "accuracy": 4,
+         "images": [
+          "../img/movies/spr2.jpg",
+          "../img/movies/spr1.jpg"
+        
+        ]
+      },
+        {
+        "name": "Windtalkers",
+        "year": 2002,
+        "type": "The Movies",
+        "size": 9,
+        "accuracy": 2,
+        "images": [
+        "../img/movies/wt2.jpg",
+          "../img/movies/wt1.jpg"
+        
+        ]
+      },
+      {
+        "name": "Patton",
+        "year": 1970,
+        "type": "The Classics",
+        "size": 1,
+        "accuracy": 7
+
+
+      },
+       {
+        "name": "The Desert Fox",
+        "year": 1951,
+        "type": "The Classics",
+        "size": 1,
+        "accuracy": 10
+      },
+       {
+        "name": "The Longest Day",
+        "year": 1962,
+        "type": "The Classics",
+        "size": 150,
+        "accuracy": 9,
+         "images": [
+          "../img/movies/tld1.jpg"
+        ]
+      },
+       {
+        "name": "To the Shores of Tripoli",
+        "year": 1942,
+        "type": "The Classics",
+        "size": 5,
+        "accuracy": 1,
+         "images": [
+          "../img/movies/ttsot1.jpg"
+        ]
+      },
+       {
+        "name": "Tora! Tora! Tora!",
+        "year": 1970,
+        "type": "The Classics",
+        "size": 80,
+        "accuracy": 8
+      }
+    ]
+
+  }
