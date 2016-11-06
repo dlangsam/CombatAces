@@ -282,17 +282,7 @@
             <div class="row">
 
                 <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat = "movie in mainCtrl.movies | filter:{type:'The Movies'} " >
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img ng-src="{{movie.images[0]}}" class="move-poster img-responsive" alt = "{{move.name}}" />                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{movie.name}}</h4>
-                        <p class="text-muted">{{movie.year}}</p>
-                    </div>
+                   <movie-snippet></movie-snippet>
                 </div>
             </div>
         </div>
@@ -755,6 +745,8 @@
 
     <!-- Theme JavaScript -->
     <script src="../js/agency.min.js"></script>
+    <script src = "../app/movies.js"></script>
+
 </div>
 </body>
 

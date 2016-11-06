@@ -1,4 +1,18 @@
-{"movies": [
+{
+  "quotes":[{
+      "quote": "Never in the field of human conflict, has so much, been owed by so many, to so few!", 
+      "author": "Winston Churchill"
+    },
+    {
+      "quote":  "An army is a team. It lives, eats, sleeps, fights as a team. This individuality stuff is a bunch of bullshit.",
+      "author": "George Patton"
+    }
+    
+
+  ],
+
+
+  "movies": [
       {
         "name": "Band of Brothers",
         "year": 2001,
