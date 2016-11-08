@@ -27,6 +27,27 @@
       };
     });
 
+    app.directive("movieGallery", function(){
+      return{
+        restrict: 'E',
+        templateUrl: '../views/movie-gallery.html',
+        controller: function(){
+            this.current = 0;
+            this.setImage = function(current){
+              this.current = current || 0;
+            };
+            this.isCurrentImage = function(current){
+              return this.current === current;
+            };
+            this.reset = function(){
+              this.current = 0; 
+            }
+          
+        },
+        controllerAs: 'gallery'
+      };
+    });
+
  
 
 })();

@@ -11,6 +11,7 @@
     $http.get('../data.json').success(function(data){
       main.movies = data.movies;
       main.quotes = data.quotes;
+      main.quote = main.getQuote(); 
     });
     
      

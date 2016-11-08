@@ -18,6 +18,7 @@
   "movies": [
       {
         "name": "Band of Brothers",
+        "tagline": "Ordinary men. Extraordinary times.",
         "year": 2001,
         "type": "The Movies",
         "size": 50,
@@ -48,6 +49,7 @@
       },
         {
         "name": "Pearl Harbor",
+        "tagline": "December 7, 1941 - A day that shall live in infamy",
         "year": 2001,
         "type": "The Movies",
         "size": 10,
@@ -59,6 +61,7 @@
       },
         {
         "name": "Saving Private Ryan",
+        "tagline": "The mission is a man.",
         "year": 1998,
         "type": "The Movies",
         "size": 8,
@@ -71,6 +74,7 @@
       },
         {
         "name": "Windtalkers",
+        "tagline": "The Navajo Has the Code. Protect the Code at All Costs.", 
         "year": 2002,
         "type": "The Movies",
         "size": 9,
