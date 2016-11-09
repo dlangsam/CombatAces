@@ -15,8 +15,10 @@
         templateUrl: '../views/movie-modal.html',
         controller: function(){
             this.current = 0;
-            this.setCurrent = function(current){
+            this.movie; 
+            this.setCurrent = function(current, movie){
               this.current = current || 0;
+              this.movie = movie; 
             };
             this.isSet = function(current){
               return this.current === current;
@@ -40,7 +42,7 @@
               return this.current === current;
             };
             this.reset = function(){
-              this.current = 0; 
+              this.current = 0;
             }
           
         },

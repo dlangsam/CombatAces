@@ -1,9 +1,9 @@
-<div class="gallery" ng-show="mainCtrl.movies[myModal.current].images.length > 0">
+<div class="gallery" ng-show="myModal.movie.images.length > 0">
     <div class="img-wrap main-img">
-        <img class = "selected-img" ng-src="{{mainCtrl.movies[myModal.current].images[gallery.current]}}" />
+        <img class = "selected-img" ng-src="{{myModal.movie.images[gallery.current]}}" />
     </div>
     <ul>
-        <span ng-repeat="image in mainCtrl.movies[myModal.current].images" >
+        <span ng-repeat="image in myModal.movie.images" >
             <a href ng-click="gallery.setImage($index)"><img class = "small-image" ng-src="{{image}}" /></a>
         </span>
      </ul>
